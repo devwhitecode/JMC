@@ -111,17 +111,6 @@ const Header = () => {
               >
                 <span className="text-lg md:text-xl">Contact us</span>
               </Link>
-
-              <button className="flex items-center gap-2 bg-black text-white px-4 py-2 rounded-full hover:bg-gray-900 transition-all duration-300">
-                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12.5 0L15.5 8H24L17 13.5L20 21.5L12.5 16L5 21.5L8 13.5L1 8H9.5L12.5 0Z" fill="white"/>
-                </svg>
-                <span className="text-lg md:text-xl">Log in</span>
-              </button>
-
-              <button className="bg-gradient-primary text-black px-6 py-2 rounded-full font-medium hover:shadow-lg transition-all duration-300">
-                <span className="text-lg md:text-xl">Sign in</span>
-              </button>
             </nav>
 
             {/* Mobile Menu Button */}

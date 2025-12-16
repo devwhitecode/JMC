@@ -87,18 +87,6 @@ const MobileMenu = ({ isOpen, onClose }) => {
             >
               Contact us
             </Link>
-
-            {/* Action Buttons */}
-            <button className="flex items-center gap-3 bg-white text-black px-8 py-3 rounded-full text-4xl md:text-5xl font-medium mt-8 hover:shadow-lg transition-all">
-              <svg width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19.5 0L24 15H39L27 24L32 39L19.5 30L7 39L12 24L0 15H15L19.5 0Z" fill="currentColor"/>
-              </svg>
-              <span>Log in</span>
-            </button>
-
-            <button className="bg-gradient-primary text-black px-10 py-3 rounded-full text-4xl md:text-5xl font-medium hover:shadow-lg transition-all">
-              Sign in
-            </button>
           </nav>
         </div>
       </div>
