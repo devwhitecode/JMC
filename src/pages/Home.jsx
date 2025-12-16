@@ -71,11 +71,11 @@ const Home = () => {
   ];
 
   const galleryImages = [
-    'https://www.figma.com/api/mcp/asset/ddaab13a-a94a-4479-b12b-96ef2b544d68',
-    'https://www.figma.com/api/mcp/asset/547bf1fa-d652-4601-9a0e-c7d5234f887e',
-    'https://www.figma.com/api/mcp/asset/e3d051b0-b073-4b52-b142-2779adf52817',
-    'https://www.figma.com/api/mcp/asset/de0c0e40-e84f-4807-809f-5fa166f878ef',
-    'https://www.figma.com/api/mcp/asset/21e874ed-2c27-4068-be6e-1a6159b42aff'
+    '/assets/images/projects/PPP.jpeg',
+    '/assets/images/projects/WhatsApp Image 2025-12-12 at 8.13.37 PM.jpeg',
+    '/assets/images/projects/WhatsApp Image 2025-12-12 at 8.18.49 PMMM.jpeg',
+    '/assets/images/projects/WhatsApp Image 2025-12-12 at 8.18.50 PMPP.jpeg',
+    '/assets/images/projects/WhatsApp Image 2025-12-12 at 8PP.jpeg'
   ];
 
   const ArrowIcon = () => (

@@ -14,90 +14,34 @@ const Gallery = () => {
   ];
 
   const projects = [
-    {
-      id: 1,
-      image: 'https://www.figma.com/api/mcp/asset/ddaab13a-a94a-4479-b12b-96ef2b544d68',
-      title: 'Modern Kitchen Remodel',
-      category: 'interior',
-      description: 'Complete kitchen renovation with custom cabinets'
-    },
-    {
-      id: 2,
-      image: 'https://www.figma.com/api/mcp/asset/547bf1fa-d652-4601-9a0e-c7d5234f887e',
-      title: 'Exterior Home Renovation',
-      category: 'exterior',
-      description: 'New siding and roof installation'
-    },
-    {
-      id: 3,
-      image: 'https://www.figma.com/api/mcp/asset/e3d051b0-b073-4b52-b142-2779adf52817',
-      title: 'Commercial Build-Out',
-      category: 'commercial',
-      description: 'Office space construction and finishing'
-    },
-    {
-      id: 4,
-      image: 'https://www.figma.com/api/mcp/asset/de0c0e40-e84f-4807-809f-5fa166f878ef',
-      title: 'Bathroom Remodel',
-      category: 'remodeling',
-      description: 'Luxury bathroom with custom tile work'
-    },
-    {
-      id: 5,
-      image: 'https://www.figma.com/api/mcp/asset/21e874ed-2c27-4068-be6e-1a6159b42aff',
-      title: 'New Home Construction',
-      category: 'residential',
-      description: 'Custom home built from the ground up'
-    },
-    {
-      id: 6,
-      image: 'https://www.figma.com/api/mcp/asset/fca367ad-8905-4cc6-b1ac-324577992389',
-      title: 'Living Room Renovation',
-      category: 'interior',
-      description: 'Modern living space transformation'
-    },
-    {
-      id: 7,
-      image: 'https://www.figma.com/api/mcp/asset/2b30f9f5-252a-49a7-97ab-2923b80f3e9c',
-      title: 'Outdoor Deck Construction',
-      category: 'exterior',
-      description: 'Custom deck with built-in seating'
-    },
-    {
-      id: 8,
-      image: 'https://www.figma.com/api/mcp/asset/a09497e3-3c3e-4bc4-9b65-9d70ead48f8c',
-      title: 'Home Addition',
-      category: 'residential',
-      description: 'Second story addition with new bedrooms'
-    },
-    {
-      id: 9,
-      image: 'https://www.figma.com/api/mcp/asset/0d1ccc82-4f16-4e68-a890-ad26ed05b0c8',
-      title: 'Commercial Storefront',
-      category: 'commercial',
-      description: 'Retail space renovation'
-    },
-    {
-      id: 10,
-      image: 'https://www.figma.com/api/mcp/asset/c8a023e5-e4ca-4eee-b508-aec203961722',
-      title: 'Master Bedroom Remodel',
-      category: 'remodeling',
-      description: 'Complete bedroom transformation'
-    },
-    {
-      id: 11,
-      image: 'https://www.figma.com/api/mcp/asset/dd51495c-bac5-4046-bb9b-889b4ecf6539',
-      title: 'Basement Finishing',
-      category: 'interior',
-      description: 'Converted basement into living space'
-    },
-    {
-      id: 12,
-      image: 'https://www.figma.com/api/mcp/asset/adccff5f-bbff-4e46-9a03-e247db3e93a2',
-      title: 'Exterior Painting Project',
-      category: 'exterior',
-      description: 'Complete exterior refresh'
-    }
+    { id: 1, image: '/assets/images/projects/PPP.jpeg', title: 'Construction Project', category: 'residential', description: 'Quality construction work' },
+    { id: 2, image: '/assets/images/projects/WhatsApp Image 2025-12-.jpeg', title: 'Remodeling Project', category: 'remodeling', description: 'Professional remodeling services' },
+    { id: 3, image: '/assets/images/projects/WhatsApp Image 2025-12-12 .jpeg', title: 'Home Renovation', category: 'residential', description: 'Complete home transformation' },
+    { id: 4, image: '/assets/images/projects/WhatsApp Image 2025-12-12 a.jpeg', title: 'Interior Work', category: 'interior', description: 'Interior finishing and detailing' },
+    { id: 5, image: '/assets/images/projects/WhatsApp Image 2025-12-12 at 8..jpeg', title: 'Exterior Project', category: 'exterior', description: 'Exterior improvements' },
+    { id: 6, image: '/assets/images/projects/WhatsApp Image 2025-12-12 at 8.+.jpeg', title: 'Construction Work', category: 'residential', description: 'Professional construction services' },
+    { id: 7, image: '/assets/images/projects/WhatsApp Image 2025-12-12 at 8.1.jpeg', title: 'Building Project', category: 'commercial', description: 'Commercial building work' },
+    { id: 8, image: '/assets/images/projects/WhatsApp Image 2025-12-12 at 8.13.3.jpeg', title: 'Renovation Work', category: 'remodeling', description: 'Complete renovation services' },
+    { id: 9, image: '/assets/images/projects/WhatsApp Image 2025-12-12 at 8.13.37 P.jpeg', title: 'Home Improvement', category: 'residential', description: 'Quality home improvements' },
+    { id: 10, image: '/assets/images/projects/WhatsApp Image 2025-12-12 at 8.13.37 PM.jpeg', title: 'Construction Services', category: 'residential', description: 'Professional construction' },
+    { id: 11, image: '/assets/images/projects/WhatsApp Image 2025-12-12 at 8.13.37.jpeg', title: 'Remodeling Services', category: 'remodeling', description: 'Expert remodeling work' },
+    { id: 12, image: '/assets/images/projects/WhatsApp Image 2025-12-12 at 8.13.38 PMM.jpeg', title: 'Interior Design', category: 'interior', description: 'Beautiful interior work' },
+    { id: 13, image: '/assets/images/projects/WhatsApp Image 2025-12-12 at 8.13.38 PMMP.jpeg', title: 'Exterior Finishing', category: 'exterior', description: 'Exterior finishing work' },
+    { id: 14, image: '/assets/images/projects/WhatsApp Image 2025-12-12 at 8.13.38 PMP.jpeg', title: 'Home Construction', category: 'residential', description: 'New home construction' },
+    { id: 15, image: '/assets/images/projects/WhatsApp Image 2025-12-12 at 8.13.3M.jpeg', title: 'Renovation Project', category: 'remodeling', description: 'Complete renovation' },
+    { id: 16, image: '/assets/images/projects/WhatsApp Image 2025-12-12 at 8.13.jpeg', title: 'Building Services', category: 'commercial', description: 'Commercial building services' },
+    { id: 17, image: '/assets/images/projects/WhatsApp Image 2025-12-12 at 8.18.49 ,,PP.jpeg', title: 'Construction Project', category: 'residential', description: 'Residential construction' },
+    { id: 18, image: '/assets/images/projects/WhatsApp Image 2025-12-12 at 8.18.49 PM....jpeg', title: 'Home Remodel', category: 'remodeling', description: 'Home remodeling services' },
+    { id: 19, image: '/assets/images/projects/WhatsApp Image 2025-12-12 at 8.18.49 PMMM.jpeg', title: 'Interior Renovation', category: 'interior', description: 'Interior renovation work' },
+    { id: 20, image: '/assets/images/projects/WhatsApp Image 2025-12-12 at 8.18.50 PM,,.jpeg', title: 'Exterior Work', category: 'exterior', description: 'Professional exterior work' },
+    { id: 21, image: '/assets/images/projects/WhatsApp Image 2025-12-12 at 8.18.50 PM,,MM.jpeg', title: 'Building Project', category: 'residential', description: 'Quality building services' },
+    { id: 22, image: '/assets/images/projects/WhatsApp Image 2025-12-12 at 8.18.50 PMPP.jpeg', title: 'Remodeling Work', category: 'remodeling', description: 'Expert remodeling' },
+    { id: 23, image: '/assets/images/projects/WhatsApp Image 2025-12-12 at 8.18.51 PMMMM.jpeg', title: 'Construction Services', category: 'residential', description: 'Construction expertise' },
+    { id: 24, image: '/assets/images/projects/WhatsApp Image 2025-12-12 at 8.P.jpeg', title: 'Home Services', category: 'residential', description: 'Comprehensive home services' },
+    { id: 25, image: '/assets/images/projects/WhatsApp Image 2025-12-12 at 8P.jpeg', title: 'Interior Project', category: 'interior', description: 'Interior design and build' },
+    { id: 26, image: '/assets/images/projects/WhatsApp Image 2025-12-12 at 8PP.jpeg', title: 'Exterior Services', category: 'exterior', description: 'Exterior construction' },
+    { id: 27, image: '/assets/images/projects/WhatsApp Image 2025-12-12 at 8.18.51 PMMMM.jpeg', title: 'Commercial Work', category: 'commercial', description: 'Commercial construction' },
+    { id: 28, image: '/assets/images/projects/WhatsApp Image 2025-12.jpeg', title: 'Renovation Services', category: 'remodeling', description: 'Professional renovation' }
   ];
 
   const filteredProjects = selectedCategory === 'all' 
@@ -189,6 +133,33 @@ const Gallery = () => {
                 </svg>
               </span>
             </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Video Showcase Section */}
+      <section className="section-padding bg-neutral-light">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <h2 className="font-radhiumz text-4xl md:text-5xl uppercase mb-4">
+              Watch Our <span className="text-primary">Work in Action</span>
+            </h2>
+            <p className="font-poppins text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+              See the quality and craftsmanship that goes into every JMC project
+            </p>
+          </div>
+          
+          <div className="max-w-5xl mx-auto">
+            <div className="relative rounded-[30px] overflow-hidden shadow-2xl border-[15px] border-white">
+              <video 
+                controls 
+                className="w-full h-auto"
+                poster="/assets/images/projects/PPP.jpeg"
+              >
+                <source src="/assets/videos/WhatsApp Video 2025-12-12 at 8.18.51 PM.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         </div>
       </section>
