@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Font Faces */
+@font-face {
+  font-family: 'NCS Radhiumz';
+  src: url('https://fonts.cdnfonts.com/s/89764/NCS Radhiumz.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aboreto';
+  src: url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ECB373;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9F7B49;
+}
+
+/* Utility Classes */
+@layer utilities {
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-[#EBBB78] to-[#9F7B49] bg-clip-text text-transparent;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-[#EBBB78] to-[#9F7B49] text-black font-bold py-2 px-6 rounded-full inline-flex items-center gap-3 hover:shadow-lg transition-all duration-300 uppercase tracking-wider;
+  }
+
+  .btn-dark {
+    @apply bg-black text-white font-bold py-2 px-6 rounded-full inline-flex items-center gap-3 hover:bg-gray-900 transition-all duration-300 uppercase tracking-wider;
+  }
+
+  .btn-outline {
+    @apply border border-gray-400 text-gray-800 font-medium py-1 px-4 rounded-full hover:border-primary hover:text-primary transition-all duration-300;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 px-4 md:px-8 lg:px-16;
+  }
+
+  .container-custom {
+    @apply max-w-[1920px] mx-auto px-4 md:px-8 lg:px-24;
+  }
+
+  .heading-primary {
+    @apply font-radhiumz text-4xl md:text-5xl lg:text-6xl xl:text-7xl uppercase leading-tight;
+  }
+
+  .heading-secondary {
+    @apply font-radhiumz text-2xl md:text-3xl lg:text-4xl uppercase leading-tight;
+  }
+
+  .text-body {
+    @apply font-poppins text-base md:text-lg leading-normal;
+  }
+}
+
+/* Animation Classes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.6s ease-out forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.6s ease-out forwards;
+}
+
+/* Image Overlay Effect */
+.image-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-overlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-overlay:hover::after {
+  opacity: 1;
+}
+
+/* Card Hover Effect */
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-2xl hover:-translate-y-2;
+}
+
+/* Background Patterns */
+.bg-pattern-dark {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ECB373' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
