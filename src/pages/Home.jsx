@@ -87,75 +87,72 @@ const Home = () => {
   return (
     <div className="bg-white overflow-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-[600px] md:min-h-[800px]">
-        {/* Background Images */}
+      <section className="relative min-h-screen bg-[#F5F0E8]">
+        {/* Background Image */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute top-0 left-0 w-full h-full">
-            <img 
-              src="https://www.figma.com/api/mcp/asset/e8fce4fb-702c-4558-8db8-e3575f1c8bef" 
-              alt="Background" 
-              className="w-full h-full object-cover opacity-90"
-            />
-          </div>
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black/40 to-transparent"></div>
+          <img 
+            src="https://www.figma.com/api/mcp/asset/e8fce4fb-702c-4558-8db8-e3575f1c8bef" 
+            alt="Background" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-white/60 via-white/40 to-transparent"></div>
         </div>
 
-        <div className="container-custom relative z-10 pt-12 pb-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left Content */}
-            <div className="text-left space-y-6">
-              <p className="font-poppins font-bold text-2xl md:text-3xl text-primary">
-                Building with Integrity.
+        <div className="container-custom relative z-10 pt-20 pb-32">
+          <div className="max-w-7xl">
+            {/* Tagline */}
+            <p className="font-poppins font-bold text-2xl md:text-3xl lg:text-4xl text-[#ECB373] mb-8">
+              Building with Integrity.
+            </p>
+
+            {/* Main Heading */}
+            <h1 className="font-radhiumz text-5xl md:text-7xl lg:text-8xl xl:text-9xl uppercase leading-[1.1] text-black mb-8">
+              TURNING YOUR<br />
+              VISION INTO<br />
+              LASTING <span className="text-[#ECB373]">QUALITY</span>
+            </h1>
+
+            {/* Description */}
+            <div className="max-w-2xl mb-10">
+              <p className="font-poppins text-lg md:text-xl leading-relaxed text-black">
+                At <span className="font-bold">JMC Construction & Remodeling</span>, we combine craftsmanship, experience, and attention to detail to deliver results that exceed expectations. From home renovations to complete remodels, we bring your ideas to life with precision and care.
               </p>
-              <h1 className="font-radhiumz text-4xl md:text-6xl lg:text-7xl uppercase leading-tight text-black">
-                Turning <span className="block">Your Vision into Lasting</span>
-                <span className="text-primary">Quality</span>
-              </h1>
-              <div className="flex flex-col sm:flex-row gap-4 pt-6">
-                <Button variant="primary" icon={<ArrowIcon />}>
-                  Get a Free Quote
-                </Button>
-                <Button variant="dark" icon={<ArrowIcon />}>
-                  View Our Work
-                </Button>
-              </div>
             </div>
 
-            {/* Right Content */}
-            <div className="text-white space-y-6">
-              <p className="font-poppins text-base md:text-lg leading-relaxed">
-                At <span className="font-extrabold">JMC Construction & Remodeling</span>, we combine craftsmanship, experience, and attention to detail to deliver results that exceed expectations. From home renovations to complete remodels, we bring your ideas to life with precision and care.
-              </p>
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <button className="bg-[#ECB373] hover:bg-[#d9a562] text-black font-bold py-4 px-8 rounded-full inline-flex items-center gap-3 transition-all duration-300 text-lg">
+                GET A FREE QUOTE
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="rotate-90">
+                  <circle cx="10" cy="10" r="9" stroke="currentColor" strokeWidth="2" fill="none"/>
+                  <path d="M10 6L10 14M10 14L6 10M10 14L14 10" stroke="currentColor" strokeWidth="2"/>
+                </svg>
+              </button>
+              <button className="bg-[#1A1208] hover:bg-black text-white font-bold py-4 px-8 rounded-full inline-flex items-center gap-3 transition-all duration-300 text-lg">
+                VIEW OUR WORK
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="rotate-90">
+                  <circle cx="10" cy="10" r="9" stroke="currentColor" strokeWidth="2" fill="none"/>
+                  <path d="M10 6L10 14M10 14L6 10M10 14L14 10" stroke="currentColor" strokeWidth="2"/>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
       </section>
 
       {/* Stats Section */}
-      <section className="bg-black relative py-20">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10 mix-blend-soft-light">
-          <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-                <circle cx="50" cy="50" r="40" fill="none" stroke="#ECB373" strokeWidth="1"/>
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#pattern)"/>
-          </svg>
-        </div>
-
+      <section className="bg-black relative py-24">
         <div className="container-custom relative z-10">
-          <div className="text-center mb-12">
-            <h2 className="font-radhiumz text-4xl md:text-5xl lg:text-6xl uppercase text-white mb-4">
-              <span className="text-primary">Trusted</span> by Homeowners
+          <div className="text-center mb-16">
+            <h2 className="font-radhiumz text-5xl md:text-6xl lg:text-7xl xl:text-8xl uppercase leading-tight">
+              <span className="text-[#ECB373]">TRUSTED</span> <span className="text-white">BY HOMEOWNERS</span>
             </h2>
-            <p className="font-radhiumz text-4xl md:text-5xl lg:text-6xl uppercase text-white">
-              Across Texas & Beyond
+            <p className="font-radhiumz text-5xl md:text-6xl lg:text-7xl xl:text-8xl uppercase text-white mt-2">
+              ACROSS TEXAS & BEYOND
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
             <StatsCard number="20" suffix="+" label="Years" />
             <StatsCard number="1,500" suffix="+" label="Projects" />
             <StatsCard number="9" suffix="+" label="Cities Served" />
@@ -219,13 +216,13 @@ const Home = () => {
       </section>
 
       {/* Services Section */}
-      <section className="section-padding bg-white">
+      <section className="py-24 bg-white">
         <div className="container-custom">
-          <h2 className="font-radhiumz text-4xl md:text-5xl lg:text-6xl uppercase text-black text-center mb-4">
-            Comprehensive Construction & Remodeling <span className="text-primary">Solutions</span>
+          <h2 className="font-radhiumz text-4xl md:text-5xl lg:text-6xl xl:text-7xl uppercase text-black text-center mb-6 leading-tight px-4">
+            COMPREHENSIVE CONSTRUCTION &<br />REMODELING <span className="text-[#ECB373]">SOLUTIONS</span>
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
             {services.map((service, index) => (
               <ServiceCard key={index} {...service} />
             ))}
@@ -234,30 +231,20 @@ const Home = () => {
       </section>
 
       {/* About Section */}
-      <section className="relative py-20 bg-black">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10 mix-blend-soft-light">
-          <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="pattern2" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
-                <path d="M40 0L80 40L40 80L0 40Z" fill="none" stroke="#ECB373" strokeWidth="1"/>
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#pattern2)"/>
-          </svg>
-        </div>
-
+      <section className="relative py-24 bg-black">
         <div className="container-custom relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="text-white space-y-6">
-              <h2 className="font-radhiumz text-4xl md:text-5xl lg:text-6xl uppercase leading-tight">
-                <span className="text-primary">Experience.</span> Reliability. Craftsmanship.
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="text-white space-y-8">
+              <h2 className="font-radhiumz text-5xl md:text-6xl lg:text-7xl uppercase leading-tight">
+                <span className="text-[#ECB373]">EXPERIENCE.</span><br />
+                RELIABILITY.<br />
+                CRAFTSMANSHIP.
               </h2>
-              <p className="font-poppins text-base md:text-lg leading-relaxed">
-                At JMC Construction & Remodeling, we believe quality goes beyond materials — it's about trust, transparency, and results that last.
+              <p className="font-poppins text-lg md:text-xl leading-relaxed">
+                At JMC Construction & Remodeling, we believe quality goes beyond materials — it\'s about trust, transparency, and results that last.
               </p>
-              <Button variant="primary" icon={<ArrowIcon />}>
-                Read More
+              <Button variant="primary" icon={true}>
+                READ MORE
               </Button>
             </div>
 
@@ -265,95 +252,55 @@ const Home = () => {
               <img 
                 src="https://www.figma.com/api/mcp/asset/b8d7cfce-9a48-426b-b286-6af636e87468" 
                 alt="Construction Quality" 
-                className="w-full h-auto rounded-[10px]"
+                className="w-full h-auto rounded-[20px]"
               />
-
-              {/* Feature Badges */}
-              <div className="absolute bottom-10 left-10 space-y-4">
-                <div className="bg-white/10 backdrop-blur-sm rounded-[20px] p-4 border border-white/20">
-                  <p className="font-poppins text-white text-xl md:text-2xl font-medium">
-                    Over 20 Years of Experience
-                  </p>
-                </div>
-              </div>
-
-              <div className="absolute top-10 right-10">
-                <div className="bg-white/10 backdrop-blur-sm rounded-[20px] p-4 border border-white/20">
-                  <p className="font-poppins text-white text-xl md:text-2xl font-medium">
-                    Quality Materials & Finishes
-                  </p>
-                </div>
-              </div>
-
-              <div className="absolute bottom-32 -left-20 hidden lg:block">
-                <div className="bg-white/10 backdrop-blur-sm rounded-[20px] p-4 border border-white/20">
-                  <p className="font-poppins text-white text-xl md:text-2xl font-medium">
-                    Family-Owned & Operated
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Gallery Section */}
-      <section className="section-padding bg-white">
+      <section className="py-24 bg-white">
         <div className="container-custom">
-          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 mb-12">
-            <div>
-              <h2 className="font-radhiumz text-4xl md:text-5xl uppercase text-black mb-4">
-                See the Difference in <span className="text-primary">Every Detail</span>
+          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-8 mb-16">
+            <div className="lg:max-w-2xl">
+              <h2 className="font-radhiumz text-5xl md:text-6xl lg:text-7xl uppercase text-black leading-tight mb-6">
+                SEE THE DIFFERENCE IN <span className="text-[#ECB373]">EVERY DETAIL</span>
               </h2>
             </div>
             <div className="lg:text-right">
-              <p className="font-poppins text-lg md:text-xl text-black mb-6 max-w-2xl">
+              <p className="font-poppins text-lg md:text-xl text-black mb-6 max-w-xl leading-relaxed">
                 Explore our latest projects to see how craftsmanship and creativity come together in every space we build.
               </p>
-              <Button variant="primary" icon={<ArrowIcon />}>
-                View All Projects
+              <Button variant="primary" icon={true}>
+                VIEW ALL PROJECTS
               </Button>
             </div>
           </div>
 
           {/* Gallery Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {galleryImages.map((image, index) => (
               <Link 
                 key={index} 
                 to="/gallery"
-                className="relative h-[400px] md:h-[600px] lg:h-[700px] rounded-[30px] overflow-hidden group border-[15px] border-white shadow-xl"
+                className="relative h-[500px] md:h-[600px] rounded-[20px] overflow-hidden group shadow-lg hover:shadow-2xl transition-shadow duration-300"
               >
                 <img 
                   src={image} 
                   alt={`Project ${index + 1}`}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </Link>
             ))}
-          </div>
-
-          {/* Navigation Arrows */}
-          <div className="flex justify-center gap-8 mt-12">
-            <button className="w-12 h-12 rounded-full bg-black flex items-center justify-center hover:bg-primary transition-colors" aria-label="Previous">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15 18L9 12L15 6" stroke="white" strokeWidth="2"/>
-              </svg>
-            </button>
-            <button className="w-12 h-12 rounded-full bg-black flex items-center justify-center hover:bg-primary transition-colors" aria-label="Next">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 18L15 12L9 6" stroke="white" strokeWidth="2"/>
-              </svg>
-            </button>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-primary"></div>
-        <div className="absolute right-0 top-0 w-1/2 h-full">
+      <section className="relative py-24 overflow-hidden bg-[#ECB373]">
+        <div className="absolute right-0 top-0 w-1/2 h-full hidden lg:block">
           <img 
             src="https://www.figma.com/api/mcp/asset/b415ae27-b08c-45db-b9bb-2a97c16ce3f5" 
             alt="Construction" 
@@ -362,15 +309,18 @@ const Home = () => {
         </div>
 
         <div className="container-custom relative z-10">
-          <div className="max-w-2xl">
-            <h2 className="font-radhiumz text-4xl md:text-5xl uppercase text-black leading-tight mb-6">
-              Upgrade, Renovate, and Refresh Your Home Seamlessly
+          <div className="max-w-2xl py-12">
+            <h2 className="font-radhiumz text-5xl md:text-6xl lg:text-7xl uppercase text-black leading-tight mb-8">
+              READY TO<br />
+              STRENGTHEN AND<br />
+              UPGRADE YOUR<br />
+              HOME?
             </h2>
-            <p className="font-poppins text-base md:text-lg text-black mb-8">
+            <p className="font-poppins text-xl md:text-2xl text-black mb-10 leading-relaxed">
               Explore modern solutions for every corner of your property.
             </p>
-            <Button variant="dark" icon={<ArrowIcon />}>
-              Get a Free Quote
+            <Button variant="dark" icon={true}>
+              GET A FREE QUOTE
             </Button>
           </div>
         </div>

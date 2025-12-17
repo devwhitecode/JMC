@@ -116,21 +116,25 @@ const Header = () => {
             {/* Mobile Menu Button */}
             <button 
               onClick={handleToggleMenu}
-              className="lg:hidden flex items-center gap-2 px-4 py-2 rounded-full border border-black"
+              className="lg:hidden flex items-center gap-2 px-5 py-2 rounded-full border-2 border-black"
               aria-label="Toggle menu"
             >
-              <div className="w-6 h-6 flex items-center justify-center">
-                {isMobileMenuOpen ? (
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2 2L18 18M2 18L18 2" stroke="currentColor" strokeWidth="3"/>
-                  </svg>
-                ) : (
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2 4H18M2 10H18M2 16H18" stroke="currentColor" strokeWidth="3"/>
-                  </svg>
-                )}
-              </div>
-              <span className="text-xl md:text-2xl font-bold">Menu</span>
+              {!isMobileMenuOpen && (
+                <>
+                  <div className="grid grid-cols-3 gap-0.5 w-6 h-6">
+                    <div className="w-1.5 h-1.5 bg-black rounded-sm"></div>
+                    <div className="w-1.5 h-1.5 bg-black rounded-sm"></div>
+                    <div className="w-1.5 h-1.5 bg-black rounded-sm"></div>
+                    <div className="w-1.5 h-1.5 bg-black rounded-sm"></div>
+                    <div className="w-1.5 h-1.5 bg-black rounded-sm"></div>
+                    <div className="w-1.5 h-1.5 bg-black rounded-sm"></div>
+                    <div className="w-1.5 h-1.5 bg-black rounded-sm"></div>
+                    <div className="w-1.5 h-1.5 bg-black rounded-sm"></div>
+                    <div className="w-1.5 h-1.5 bg-black rounded-sm"></div>
+                  </div>
+                  <span className="text-2xl font-bold">Menu</span>
+                </>
+              )}
             </button>
           </div>
         </div>

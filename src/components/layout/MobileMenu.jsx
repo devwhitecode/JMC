@@ -5,37 +5,53 @@ const MobileMenu = ({ isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 z-50 lg:hidden">
-      {/* Backdrop */}
-      <div 
-        className="absolute inset-0 bg-black bg-opacity-90"
-        onClick={onClose}
-        aria-hidden="true"
-      />
+      {/* Full Black Background */}
+      <div className="absolute inset-0 bg-black" />
 
       {/* Menu Content */}
-      <div className="relative h-full overflow-y-auto bg-pattern-dark">
-        <div className="container mx-auto px-6 py-8">
-          {/* Close Button */}
-          <button
-            onClick={onClose}
-            className="absolute top-8 right-6 flex items-center gap-3 px-6 py-2 rounded-full border border-primary text-primary"
-            aria-label="Close menu"
-          >
-            <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M2 2L23 24M2 24L23 2" stroke="currentColor" strokeWidth="3"/>
-            </svg>
-            <span className="text-3xl font-bold">Close</span>
-          </button>
+      <div className="relative h-full overflow-y-auto">
+        <div className="px-6 py-6">
+          {/* Header with Logo and Close Button */}
+          <div className="flex items-center justify-between mb-20">
+            {/* Logo */}
+            <Link to="/" onClick={onClose}>
+              <img 
+                src="https://www.figma.com/api/mcp/asset/14f88c83-0b1d-414c-86f4-dab5872052c4" 
+                alt="JMC Construction & Remodeling" 
+                className="h-12 w-auto"
+              />
+            </Link>
 
-          {/* Navigation Links */}
-          <nav className="flex flex-col items-center gap-8 mt-32">
+            {/* Close Button */}
+            <button
+              onClick={onClose}
+              className="flex items-center gap-2 px-5 py-2 rounded-full border-2 border-[#ECB373] text-[#ECB373]"
+              aria-label="Close menu"
+            >
+              <div className="grid grid-cols-3 gap-1 w-6 h-6">
+                <div className="w-1.5 h-1.5 bg-[#ECB373]"></div>
+                <div className="w-1.5 h-1.5 bg-[#ECB373]"></div>
+                <div className="w-1.5 h-1.5 bg-[#ECB373]"></div>
+                <div className="w-1.5 h-1.5 bg-[#ECB373]"></div>
+                <div className="w-1.5 h-1.5 bg-[#ECB373]"></div>
+                <div className="w-1.5 h-1.5 bg-[#ECB373]"></div>
+                <div className="w-1.5 h-1.5 bg-[#ECB373]"></div>
+                <div className="w-1.5 h-1.5 bg-[#ECB373]"></div>
+                <div className="w-1.5 h-1.5 bg-[#ECB373]"></div>
+              </div>
+              <span className="text-2xl font-bold">Close</span>
+            </button>
+          </div>
+
+          {/* Navigation Links - CENTER ALIGNED */}
+          <nav className="flex flex-col items-center gap-6 mt-12">
             <Link 
               to="/" 
               onClick={onClose}
-              className="flex items-center gap-3 px-6 py-3 rounded-full border border-primary text-primary text-4xl font-bold"
+              className="flex items-center gap-3 px-8 py-3 rounded-full border-2 border-[#ECB373] text-[#ECB373] text-3xl font-medium"
             >
-              <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 15L13.5 0.5L27 15L22.5 19.5L13.5 10.5L4.5 19.5L0 15Z" fill="currentColor"/>
+              <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 11L10 0.5L20 11L17 14L10 7L3 14L0 11Z" fill="currentColor"/>
               </svg>
               <span>Home</span>
             </Link>
@@ -43,7 +59,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
             <Link 
               to="/about" 
               onClick={onClose}
-              className="px-6 py-3 rounded-full border border-white text-white text-4xl md:text-5xl font-medium hover:border-primary hover:text-primary transition-all"
+              className="px-8 py-3 rounded-full border-2 border-white text-white text-3xl font-medium hover:border-[#ECB373] hover:text-[#ECB373] transition-all"
             >
               About Us
             </Link>
@@ -51,15 +67,15 @@ const MobileMenu = ({ isOpen, onClose }) => {
             <Link 
               to="/services" 
               onClick={onClose}
-              className="px-6 py-3 rounded-full border border-white text-white text-4xl md:text-5xl font-medium hover:border-primary hover:text-primary transition-all"
+              className="px-8 py-3 rounded-full border-2 border-white text-white text-3xl font-medium hover:border-[#ECB373] hover:text-[#ECB373] transition-all flex items-center gap-2"
             >
-              Our Services &gt;
+              Our Services <span className="text-2xl">›</span>
             </Link>
 
             <Link 
               to="/gallery" 
               onClick={onClose}
-              className="px-6 py-3 rounded-full border border-white text-white text-4xl md:text-5xl font-medium hover:border-primary hover:text-primary transition-all"
+              className="px-8 py-3 rounded-full border-2 border-white text-white text-3xl font-medium hover:border-[#ECB373] hover:text-[#ECB373] transition-all"
             >
               Gallery
             </Link>
@@ -67,7 +83,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
             <Link 
               to="/blog" 
               onClick={onClose}
-              className="px-6 py-3 rounded-full border border-white text-white text-4xl md:text-5xl font-medium hover:border-primary hover:text-primary transition-all"
+              className="px-8 py-3 rounded-full border-2 border-white text-white text-3xl font-medium hover:border-[#ECB373] hover:text-[#ECB373] transition-all"
             >
               Blog
             </Link>
@@ -75,7 +91,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
             <Link 
               to="/faq" 
               onClick={onClose}
-              className="px-6 py-3 rounded-full border border-white text-white text-4xl md:text-5xl font-medium hover:border-primary hover:text-primary transition-all"
+              className="px-8 py-3 rounded-full border-2 border-white text-white text-3xl font-medium hover:border-[#ECB373] hover:text-[#ECB373] transition-all"
             >
               FAQ
             </Link>
@@ -83,7 +99,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
             <Link 
               to="/contact" 
               onClick={onClose}
-              className="px-6 py-3 rounded-full border border-white text-white text-4xl md:text-5xl font-medium hover:border-primary hover:text-primary transition-all"
+              className="px-8 py-3 rounded-full border-2 border-white text-white text-3xl font-medium hover:border-[#ECB373] hover:text-[#ECB373] transition-all"
             >
               Contact us
             </Link>
