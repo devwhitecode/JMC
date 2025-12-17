@@ -87,54 +87,59 @@ const Home = () => {
   return (
     <div className="bg-white overflow-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-screen bg-[#F5F0E8]">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://www.figma.com/api/mcp/asset/e8fce4fb-702c-4558-8db8-e3575f1c8bef" 
-            alt="Background" 
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-white/60 via-white/40 to-transparent"></div>
-        </div>
-
-        <div className="container-custom relative z-10 pt-20 pb-32">
-          <div className="max-w-7xl">
-            {/* Tagline */}
-            <p className="font-poppins font-bold text-2xl md:text-3xl lg:text-4xl text-[#ECB373] mb-8">
-              Building with Integrity.
-            </p>
-
-            {/* Main Heading */}
-            <h1 className="font-radhiumz text-5xl md:text-7xl lg:text-8xl xl:text-9xl uppercase leading-[1.1] text-black mb-8">
-              TURNING YOUR<br />
-              VISION INTO<br />
-              LASTING <span className="text-[#ECB373]">QUALITY</span>
-            </h1>
-
-            {/* Description */}
-            <div className="max-w-2xl mb-10">
-              <p className="font-poppins text-lg md:text-xl leading-relaxed text-black">
-                At <span className="font-bold">JMC Construction & Remodeling</span>, we combine craftsmanship, experience, and attention to detail to deliver results that exceed expectations. From home renovations to complete remodels, we bring your ideas to life with precision and care.
+      <section className="relative min-h-[90vh] bg-white">
+        <div className="container-custom relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[90vh] py-20">
+            {/* Left Column - Text Content */}
+            <div className="space-y-8">
+              {/* Tagline */}
+              <p className="font-poppins font-bold text-3xl md:text-4xl text-[#ECB373]">
+                Building with Integrity.
               </p>
+
+              {/* Main Heading */}
+              <h1 className="font-radhiumz text-5xl md:text-6xl lg:text-7xl xl:text-8xl uppercase leading-[1.05] text-black">
+                TURNING YOUR<br />
+                VISION INTO<br />
+                LASTING <span className="text-[#ECB373]">QUALITY</span>
+              </h1>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <button className="bg-[#ECB373] hover:bg-[#d9a562] text-black font-bold py-4 px-8 rounded-full inline-flex items-center justify-center gap-3 transition-all duration-300 text-base uppercase">
+                  GET A FREE QUOTE
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="rotate-90">
+                    <circle cx="10" cy="10" r="9" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <path d="M10 6L10 14M10 14L6 10M10 14L14 10" stroke="currentColor" strokeWidth="2"/>
+                  </svg>
+                </button>
+                <button className="bg-[#1A1208] hover:bg-black text-white font-bold py-4 px-8 rounded-full inline-flex items-center justify-center gap-3 transition-all duration-300 text-base uppercase">
+                  VIEW OUR WORK
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="rotate-90">
+                    <circle cx="10" cy="10" r="9" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <path d="M10 6L10 14M10 14L6 10M10 14L14 10" stroke="currentColor" strokeWidth="2"/>
+                  </svg>
+                </button>
+              </div>
             </div>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <button className="bg-[#ECB373] hover:bg-[#d9a562] text-black font-bold py-4 px-8 rounded-full inline-flex items-center gap-3 transition-all duration-300 text-lg">
-                GET A FREE QUOTE
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="rotate-90">
-                  <circle cx="10" cy="10" r="9" stroke="currentColor" strokeWidth="2" fill="none"/>
-                  <path d="M10 6L10 14M10 14L6 10M10 14L14 10" stroke="currentColor" strokeWidth="2"/>
-                </svg>
-              </button>
-              <button className="bg-[#1A1208] hover:bg-black text-white font-bold py-4 px-8 rounded-full inline-flex items-center gap-3 transition-all duration-300 text-lg">
-                VIEW OUR WORK
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="rotate-90">
-                  <circle cx="10" cy="10" r="9" stroke="currentColor" strokeWidth="2" fill="none"/>
-                  <path d="M10 6L10 14M10 14L6 10M10 14L14 10" stroke="currentColor" strokeWidth="2"/>
-                </svg>
-              </button>
+            {/* Right Column - Image & Description */}
+            <div className="space-y-8">
+              {/* House Image */}
+              <div className="relative rounded-[20px] overflow-hidden shadow-2xl">
+                <img 
+                  src="https://www.figma.com/api/mcp/asset/e8fce4fb-702c-4558-8db8-e3575f1c8bef" 
+                  alt="Modern House" 
+                  className="w-full h-auto"
+                />
+              </div>
+
+              {/* Description Text */}
+              <div className="bg-white p-8 rounded-[20px]">
+                <p className="font-poppins text-lg md:text-xl leading-relaxed text-black">
+                  At <span className="font-bold">JMC Construction & Remodeling</span>, we combine craftsmanship, experience, and attention to detail to deliver results that exceed expectations. From home renovations to complete remodels, we bring your ideas to life with precision and care.
+                </p>
+              </div>
             </div>
           </div>
         </div>
